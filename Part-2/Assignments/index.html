@@ -1,0 +1,20 @@
+<html>
+    <head>
+        <title>Events & DOM Example</title>
+        <script src="./color.js" type="text/javascript"></script>
+    </head>
+    <body>
+        <h3>Events And DOM Example:</h3>
+        <button id="btn1" style="background-color: red;" onmouseover="changeColor1()">MouseOver</button>
+        <br><br>
+        <button style="background-color: red;" onmouseout="changeColor2()">MouseOut</button>
+        <br><br>
+        <button class="alia" style="background-color: red;" onclick="changeColor3()">click</button>
+        <hr>
+        <label >Form Event- Focus Example</label>
+        <input type="text" onfocus="changeColor4()" id="inputTag"/>
+        <hr>
+        <label >Form-Event Blur Example:</label>
+        <input type="text" id="blurEx" onblur="changeCase()"/>
+    </body>
+</html>
