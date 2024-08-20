@@ -1000,22 +1000,13 @@ let users=[{"id":1,"name":"Zaria","email":"zhenningham0@eepurl.com","gender":"Fe
 
 function getUsers(){
     let rows=""
-
-    users.forEach((user)=>{
-        rows = rows + `<tr>
-                            <td>${user.id}</td>
-                            <td>${user.name.toUpperCase()}</td>
-                            <td>${user.email}</td>
-                            <td>${user.gender}</td>
-                            </tr>`
-    })
-  /*   for(user of users){
+    for(user of users){
             rows = rows + `<tr>
                             <td>${user.id}</td>
                             <td>${user.name}</td>
                             <td>${user.email}</td>
                             <td>${user.gender}</td>
                             </tr>`
-    } */
+    }
     document.getElementById('table_Data').innerHTML=rows
 }
